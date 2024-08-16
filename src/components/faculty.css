@@ -1,0 +1,27 @@
+.ion-card {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .ion-card img {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+  }
+  
+  .ion-card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .ion-text {
+    text-align: center;
+    text-decoration:double;
+  }
+  

@@ -1,11 +1,23 @@
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import { useParams } from 'react-router';
-import ExploreContainer from '../components/ExploreContainer';
-import './Page.css';
+import {
+  IonButtons,
+  IonContent,
+  IonHeader,
+  IonIcon,
+  IonMenuButton,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+} from "@ionic/react";
+import { useParams } from "react-router";
+import ExploreContainer from "../components/ExploreContainer";
+import "./Page.css";
+import { homeOutline } from "ionicons/icons";
+import { Link } from "react-router-dom";
+import "../components/faculties";
+import "../components/admission";
 
 const Page: React.FC = () => {
-
-  const { name } = useParams<{ name: string; }>();
+  const { name } = useParams<{ name: string }>();
 
   return (
     <IonPage>
@@ -13,6 +25,15 @@ const Page: React.FC = () => {
         <IonToolbar>
           <IonButtons slot="start">
             <IonMenuButton />
+          </IonButtons>
+          <IonButtons slot="end">
+            <Link to={"/"}>
+              <IonIcon
+                className="ion-padding"
+                style={{ fontSize: "24px" }}
+                icon={homeOutline}
+              ></IonIcon>
+            </Link>
           </IonButtons>
           <IonTitle>{name}</IonTitle>
         </IonToolbar>
