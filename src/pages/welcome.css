@@ -1,14 +1,31 @@
 .ion-content {
-    background: url('/src/assets/images/ub.jpeg') no-repeat center center;
-    background-size: cover;
+    /* background: url('/src/assets/images/ub.jpeg') no-repeat center center;
+    background-size: cover; */
     height: 100%;
+    position: relative;
   }
   
   .welcome-message {
     text-align: center;
-    color: #fff; 
+    color: black; 
     padding: 20px;
     font-size: 24px;
     font-weight: bold;
+    position: fixed;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    margin-top: 30%;
   }
-  
+  .image-container img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    
+
+  }
+  .header-logo{
+    height: 40px;
+    width:auto; 
+    margin-right: 20px;
+    float:left;
+  }

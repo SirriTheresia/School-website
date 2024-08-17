@@ -45,6 +45,12 @@ interface AppPage {
 
 const appPages: AppPage[] = [
   {
+    title: "Home",
+    url: "/Welcome",
+    iosIcon: homeOutline,
+    mdIcon: homeOutline,
+  },
+  {
     title: "Faculties",
     url: "/faculties",
     iosIcon: schoolOutline,
@@ -68,12 +74,7 @@ const appPages: AppPage[] = [
     iosIcon: information,
     mdIcon: information,
   },
-  {
-    title: "Trash",
-    url: "/folder/Trash",
-    iosIcon: trashOutline,
-    mdIcon: trashSharp,
-  },
+  
 ];
 
 const labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];

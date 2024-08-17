@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonGrid, IonRow, IonCol, IonCard, IonCardContent, IonImg, IonText, IonPage } from '@ionic/react';
+import { IonGrid, IonRow, IonCol, IonCard, IonCardContent, IonImg, IonText, IonPage, IonTitle } from '@ionic/react';
 import './faculty.css'; 
 
 const faculties = [
@@ -14,7 +14,10 @@ const faculties = [
 const Faculty: React.FC = () => {
   return (
     <IonPage>
-
+      <IonTitle>
+        Faculties in UB
+      </IonTitle>
+<IonCardContent>
     <IonGrid>
       <IonRow>
         {faculties.map((faculty, index) => (
@@ -30,6 +33,7 @@ const Faculty: React.FC = () => {
         ))}
       </IonRow>
     </IonGrid>
+    </IonCardContent>
     </IonPage>
   );
 };

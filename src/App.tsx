@@ -32,7 +32,7 @@ import Faculty from "./components/faculties";
 import Administration from "./components/admission";
 import StudentGuide from "./components/StudentGuide";
 import AboutUs from "./components/about";
-
+import Managedepartment from "./pages/managedepartment";
 setupIonicReact();
 
 const App: React.FC = () => {
@@ -42,7 +42,7 @@ const App: React.FC = () => {
         <IonSplitPane contentId="main">
           <Menu />
           <IonRouterOutlet id="main">
-            <Route path="/" exact={true}>
+            <Route path="/Welcome" exact={true}>
               <Welcome />
             </Route>
             <Route path="/folder/:name" exact={true}>
@@ -58,6 +58,9 @@ const App: React.FC = () => {
             <StudentGuide/></Route>
             <Route path={"/about"}>
               <AboutUs />
+            </Route>
+            <Route path={"/manage-departments"}>
+            <Managedepartment/>
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>
